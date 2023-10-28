@@ -7,7 +7,7 @@ function changeStatus(client) {
       client.user.setActivity(newStatus);
       console.log(`Status alterado para: ${newStatus}`);
       index = (index + 1) % statuses.length;
-    }, 5000); // 5 segundos
+    }, 5000); // status mudam a cada 5 segundos
   }
 
   module.exports = {
